@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title> Ping coming soon page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <main>
+    <!-- Start Header -->
+    <header id="header">
+      <div class="container">
+        <div class="header-items">
+          <!-- Start Logo  -->
+          <div class="logo">
+            <a href="">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+          </div>
+          <!-- End Logo  -->
+          <!-- Start Text  -->
+          <div class="text">
+            <h1>
+              We are launching <span>soon!</span>
+            </h1>
+            <p>
+              Subscribe and get notified
+            </p>
+          </div>
+          <!-- End Text -->
+
+          <!-- Start Input Filed -->
+          <div class="input-filed">
+            <input type="email" id="inputText">
+            <span class="invalid">Please provid a valid email</span>
+            <button type="submit">Notify Me</button>
+          </div>
+          <!-- End Input Filed  -->
+          <!-- Start Hero -->
+          <div class="hero">
+            <img src="images/illustration-dashboard.png" alt="illustration-dashboard">
+          </div>
+          <!-- End Hero -->
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Footer  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="links-media">
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank" style="font-size: 24px; color: #1877f2; margin: 0 10px;">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank" style="font-size: 24px; color: #000000; margin: 0 10px;">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" style="font-size: 24px; color: #e4405f; margin: 0 10px;">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; Copyright Ping. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+  </main>
+  <script>
+
+    const input = document.getElementById('inputText');
+    input.addEventListener('input', () => {
+      input.checkValidity() ? document.querySelector('.invalid').style.display = 'none' : document.querySelector('.invalid').style.display = 'block'
+    })
+
+  </script>
+</body>
+
+</html>
